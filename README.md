@@ -3,7 +3,7 @@
 
 **Bloco de Anotações:** O projeto tem como objetivo listar itens, estes podem ser incluidos ou excluidos.
 
-![home page](https://raw.githubusercontent.com/willgoncalvescruz/blocodenotas/bloco-de-notas-home.jpg)
+![home page](https://raw.githubusercontent.com/willgoncalvescruz/bloco-de-notas/bloco-de-notas-home.jpg)
 
 ## Tecnologias Utilizadas
 - HTML
@@ -13,6 +13,9 @@
 
 ## Depêndencias Necessárias para Rodar
 ```sl
+Rodar local, pode instalar a extensão Live Server no VS Code.
+http://127.0.0.1:5500/
+
 # Baixar as dependências
 npm install
 
