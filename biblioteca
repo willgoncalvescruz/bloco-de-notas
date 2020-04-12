@@ -1,0 +1,108 @@
+JS Biblioteca:
+
+//botão de alerta quando clicado
+  <div id="app" class="form"></div>
+  //clicar o mouse
+  <button onclick="mostraAlerta()">Me pressione</button>
+  //passar o mouse
+  <button onmouseover="mostraAlerta()">Me pressione</button>
+
+  <script>
+function mostraAlerta(){
+  alert('Botão foi clicado');
+}
+  </script>
+
+//elementos
+
+<body>
+  <!-- Nada a ser feito neste arquivo -->
+  <div id="app" class="form"></div>
+  <input type="text" name ="nome" id="nome" class="nome"/>
+  <input type="text" name ="nome" id="nome" class="nome1"/>
+  <button class="botao">Adcionar</button>
+
+  <script>
+var inputElement = document.getElementsByTagName('input')[0];
+console.log(inputElement);
+  </script>
+  
+  // opções  posso usar id (único elemento), class, input
+  var inputElement = document.getElementById('nome');
+  
+  //querySelector retorna sempre um elemento (all todos elementos)
+  <body>
+  <!-- Nada a ser feito neste arquivo -->
+  <div id="app" class="form">
+  <input type="text" name ="nome" id="nome" class="nome"/>
+  <button class="botao">Adcionar</button>
+</div>
+
+  <script>
+  // pega o input dentro da div #app que pertence ao body
+var inputElement = document.querySelector('body div#app input');
+//outras opção de referência 
+var inputElement = document.querySelector('input[name=nome]');
+var inputElement = document.querySelectorAll('input');
+
+console.log(inputElement);
+  </script>
+  
+  //chamando função atraves do click no botão
+  <body>
+  <!-- Nada a ser feito neste arquivo -->
+  <div id="app" class="form">
+    <input type="text" name="nome" id="nome" class="nome" />
+    <button class="botaoPrincipal">Executar Função</button>
+  </div>
+
+  <script>
+    var btnElement = document.querySelector('button.botaoPrincipal');
+    btnElement.onclick = function () {
+      alert('Função Executada com Sucesso!')
+    }
+  </script>
+  
+  
+  //passar texto do input para o alert
+  var inputElement = documento.querySelector('input[name=nome]');
+var btnElement = document.querySelector('button.botao');
+
+btnElement.onclick = function () {
+  var text = inputElement.value;
+  alert(text);
+
+}
+
+//criando link atraves das tags
+<body>
+  <!-- Nada a ser feito neste arquivo -->
+  <div id="app" class="logo">
+  </div>
+<a href="http://rocketseat.com.br">Acessar Site da Rocketseat</a>
+  <script>
+var linkElement = document.createElement('a');
+linkElement.setAttribute('href', 'http://rocketseat.com.br');
+linkElement.setAttribute('title', 'Site da Rocket Seat');
+
+var textElement = documento.createTextNode('Acessar site da Rocketseat');
+linkElement.appendChild(textElement);
+
+var containerElement = document.querySelector('#app');
+containerElement.appendChild(linkElement);
+  </script>
+  
+  
+  //controlando css dentro do js
+  <body>
+  <!-- Nada a ser feito neste arquivo -->
+  <div id="app">
+    <div class="box"></div>
+  </div>
+
+  <script>
+var boxElement = document.querySelector('.box');
+boxElement.style.width = 100;
+boxElement.style.height = 100;
+boxElement.style.backgroundColor = 'red';
+  </script>
