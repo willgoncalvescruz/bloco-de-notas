@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RD Frontend Challenge</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bloco de Anotações</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
+<header>
+  <p>
+    <a class="title">
+      Bloco de Anotações
+    </a>
+  </p>
+  <img src="./logoblocodeanotacoes.jpg" class="logo" alt="Imagem da Logomarca">
+</header>
+
+<main>
+  <p>
+    App desenvolvido para listar tarefas do dia a dia.
+  </p>
+  <br>
+  *A Gravação é feita na Storage do Navegador.
+</main>
+
 <body>
-    <!-- Nada a ser feito neste arquivo -->
-    <div id="logo" class="logo"></div>
-    <div id="app" class="form"></div>
-    <script src="./assets/js/bundle.js"></script>
+  <!-- Nada a ser feito neste arquivo -->
+  <div id="app">
+    <input type="text" id="forminput" class="forminput"  maxlength="25" placeholder="Descreva aqui, máximo 25 catacteres..."><p></p>
+    <button>Incluir Anotação</button>
+    <p>
+      Minha Lista:
+    </p>
+    <ul></ul>
+  </div>
 
-
-    teste
+  <!--Scrpit JS-->
+  <script src="./js/script.js"></script>
 </body>
-</html>
 
+</html>
