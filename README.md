@@ -3,7 +3,7 @@
 
 **Bloco de Anotações:** O projeto tem como objetivo listar itens, estes podem ser incluidos ou excluidos.
 
-![home page](https://raw.githubusercontent.com/willgoncalvescruz/bloco-de-notas/bloco-de-notas-home.jpg)
+![home page](https://raw.githubusercontent.com/willgoncalvescruz/bloco-de-notas/bloco-de-notas-home.png)
 
 ## Tecnologias Utilizadas
 - HTML
